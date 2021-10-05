@@ -18,12 +18,10 @@ from sklearn.preprocessing import StandardScaler
 import warnings
 warnings.filterwarnings('ignore')
 
-from google.colab import drive
-drive.mount("/content/gdrive")
 
 """# **Ouverture du csv, un peu long car volumineux**"""
 
-df=pd.read_csv('/content/gdrive/My Drive/Val_projet/airbnb.csv',";")
+df=pd.read_csv('airbnb.csv',";")
 
 """Le dataframe est immense et nous n'allons pas tout utiliser, nous supprimons toutes les colonnes qui ne sont pas utiles à notre recherche. Nous pourrons toujours venir les rechercher si nous en avons le besoin
 
